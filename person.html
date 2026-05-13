@@ -1,0 +1,195 @@
+<html>
+<head>
+    <title>Quaint Clothing</title>
+    <link rel="icon" href="small logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+            background-color: black;
+        }
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset black;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #212121;
+            -webkit-box-shadow: inset 0 0 6px #000000b3;
+        }
+        body {
+            background-color: #f0f0f0;
+        }
+        .about-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+        .custom-font {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .bgimg {
+            background-image: url("productbg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position-y: -90px;
+        }
+        .bgimg2 {
+            background-image: url("p1.png");
+            background-size: cover;
+            background-position: 15%;
+            height: 100vh;
+            display: flex;
+            
+            align-items: center;
+            justify-content: flex-end;
+            padding: 20px;
+            position: relative;
+        }
+        .jstfy {
+            text-align: justify;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .t {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .grayb {
+            background-color: #4d4d4d75;
+            background-attachment: fixed;
+            margin-top: 3.15in;
+        }
+        .float-end{
+            margin: 1in;
+            margin-top: 1in;
+            margin-bottom: -0.1in;
+            margin-left: -1.5in;
+            margin-right: 2in;
+        }
+        .content {
+            max-width: 900px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .bgimg2 {
+                background-size: contain;
+            }
+            .content {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 430px) {
+            .bgimg2 {
+                background-size: cover;
+            }
+            .content {
+                font-size: 0.8rem;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body class="bgimg">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bgimg">
+        <a class="navbar-brand ms-5 ps-5 ms-sm-3 ms-md-5 text-black fs-2" href="index.html">
+            <img src="quaint white logo.png" height="120px">
+            <span class="text-white">Quaint Clothing</span>
+        </a>
+        <button class="navbar-toggler me-lg-5 me-md-5 me-sm-5" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-sm-5 ps-sm-5 me-sm-5 pe-sm-5" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="person.html">Personnel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="support.html">Support</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-5 text-white" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="products.html#beanie">Beanies</a></li>
+                        <li><a class="dropdown-item" href="products.html#shirt">Shirts</a></li>
+                        <li><a class="dropdown-item" href="products.html#cap">Caps</a></li>
+                        <li><a class="dropdown-item" href="products.html#hat">Hats</a></li>
+                        <li><a class="dropdown-item" href="products.html#hood">Hoodie</a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="bgimg2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 d-lg-12 d-sm-block"></div>
+                <div class="col-lg-12 align-items-end">
+                    <a href="https://beacons.ai/jadesupan?fbclid=IwZXh0bgNhZW0CMTAAAR1UC7iRRk8AxkUhMkoqw0aPaVxkdrWta5OtEa9gTrXlxVkCGF35BTQXvAU_aem_Ac1hj8Ilq9srcJqoJ14HEdxv7xKZcnXsfRTWLznOMuD9ZTFUK35F7OsXpe_-p4b0qBVMJ7gRuZq0WvFcqAyLC03N" data-toggle="tooltip" title="beacons.ai/jadesupan">
+                    <img src="pb.png" class="p-3 float-end" style="border-radius: 5px;"></a>
+                    <a href="#" data-toggle="tooltip" title="JadeSupan@gmail.com">
+                    <img src="pe.png" class="p-3 float-end" style="border-radius: 5px;"></a>
+                    <a href="https://www.youtube.com/c/JadeSupan" data-toggle="tooltip" title="www.youtube.com/JadeSupan">
+                    <img src="py.png" class="p-3 float-end" style="border-radius: 5px;"></a>
+                    <a href="https://www.instagram.com/chriiiisteeel?fbclid=IwZXh0bgNhZW0CMTAAAR1HES8ZAA5P4D4ATJYH_d5AUgqkwBNxZWyrAacW2dkqlqNRyXTYG6tAtfE_aem_Ac3zLYgXbxATM6Gfhy_06UycICGOsuOnOYV757kc5AHAuIZ_rrQQA8z9Zfdt0q0b8Vj4w0Jpevs5kGJ11WlKz8wV" data-toggle="tooltip" title="www.instagram.com/chriiiisteeel">
+                    <img src="pi.png" class="p-3 float-end" style="border-radius: 5px;"></a>
+                    <a href="https://www.facebook.com/whoschristel" data-toggle="tooltip" title="www.facebook.com/whoschristel">
+                    <img src="pf.png" class="p-3 float-end" style="border-radius: 5px;"></a>
+                </div>
+                <div class="col-lg-6 col-sm-12 d-lg-12 d-sm-block text-center p-5 justify-content-center ms-auto content">
+                    <div class="fs-1 fw-bold t text-white">Christel Jade</div>
+                    <div class="fs-5 t text-white">Founder/Owner</div><br>
+                    <div class="fs-3 t text-white mb-5">Started 10 years old as a young entrepreneur, she sells ballpoint pens and some candy inside their classroom. At the age of 17, she decided to build up her own clothing brand, Quaint Clothing.</div>
+                </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="bg-black text-light text-center py-4 position-static">
+        <div class="container">
+            <div class="row">
+                <hr>
+                <div class="col">
+                    <p>&copy; 2024 Quaint Clothing. All rights reserved.</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </footer>
+    
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script defer src="modal.js"></script>
+        <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="145acf32-e508-4a04-b786-73afcb5ad0d1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+</body>
+</html>

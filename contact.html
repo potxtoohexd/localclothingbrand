@@ -1,0 +1,303 @@
+<html>
+<head>
+    <title>Quaint Clothing</title>
+    <link rel="icon" href="small logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        ::-webkit-scrollbar {
+                width: 10px;
+                background-color: black;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset black;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color:#212121;
+            -webkit-box-shadow: inset 0 0 6px #000000b3;
+        }   
+        body {
+            background-color: #f0f0f0;
+        }
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+        .custom-font {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .bgimg {
+            background-image: url("https://i.pinimg.com/564x/26/9c/a1/269ca189c69350a6ae1ed46f56e938ee.jpg");
+            background-attachment: fixed;
+            background-position-y: -90px;
+            background-size: cover;
+        }
+        .navbar {
+            background-image: url("https://i.pinimg.com/564x/26/9c/a1/269ca189c69350a6ae1ed46f56e938ee.jpg");
+            background-attachment: fixed;
+            background-position-y: -90px;
+            background-size: cover;
+        }
+        .contact {
+            text-align: center;
+        }
+        .contact h3{
+            font-size: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+        }
+        .contact p{
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .contact label{
+            font-style: italic;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .form-control {
+            border-radius: 25px;
+        }
+        .content {
+            text-align: center;
+            background-color: #343a40;
+            border-top-right-radius: 80px;
+        }
+        .content i {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 70px;
+            background-color: white;
+            border-radius: 20px;
+        }
+        .txt {
+            background-color: #f0f0f0;
+            margin-left: 50px;
+            margin-right: 50px;
+            border-bottom-left-radius: 80px;
+        }
+        .txt h5 {
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 25px;
+        }
+        .txt h1 {
+            font-size: 20px;
+            font-weight: 400;
+            font-style: italic;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        .grbg{
+            background-color: rgba(0, 0, 0, 0.169);
+        }
+    </style>
+</head>
+<body class="bgimg">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <a class="navbar-brand ms-5 ps-5 ms-sm-3 ms-md-5 text-black fs-2 " href="index.html"><img src="Quaint png.png" height="120px"> <span>Quaint Clothing</span></a>
+
+        <button class="navbar-toggler me-lg-5 me-md-5 me-sm-5" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ms-sm-5 ps-sm-5 me-sm-5 pe-sm-5" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-black fs-5" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black fs-5" href="person.html">Personnel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black fs-5" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black fs-5" href="contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black fs-5" href="support.html">Support</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-5 text-black" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="products.html#beanie">Beanies</a></li>
+                        <li><a class="dropdown-item" href="products.html#shirt">Shirts</a></li>
+                        <li><a class="dropdown-item" href="products.html#cap">Caps</a></li>
+                        <li><a class="dropdown-item" href="products.html#hat">Hats</a></li>
+                        <li><a class="dropdown-item" href="products.html#hood">Hoodie</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container ">
+        <div class=" col-lg-12 col-sm-12 text-center p-4 justify-content-center m-auto contact">
+            <h3>Contact Us</h3>
+            <p>Any questions or remarks? Just write us a message!</p>
+                <div class="container text-center mt-5">
+                    <div class="row justify-content-center">
+                    <div class="col col-sm-4">
+                        <label for="FormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="FormControlInput1" placeholder="Enter a valid Email Address">
+                    </div>
+                    <div class="col col-sm-4">
+                        <label for="FormControlTextarea1" class="form-label">Name</label>
+                        <textarea class="form-control" id="FormControlTextarea1" rows="1" placeholder="Enter your Name"></textarea>
+                    </div>
+                    <div class="col col-sm-8">
+                        <label for="FormControlTextarea2" class="form-label">Message</label>
+                        <textarea class="form-control" id="FormControlTextarea2" rows="3" placeholder="Write your message.."></textarea>
+                    </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-dark mt-3 col-sm-4 grbg" style="border-radius: 25px;" id="submitButton" data-bs-toggle="popover" data-bs-title="Submission Status" data-bs-content="Successfully submitted!">SUBMIT</button>
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                    const submitButton = document.getElementById('submitButton');
+                    const emailInput = document.getElementById('FormControlInput1');
+                    const nameInput = document.getElementById('FormControlTextarea1');
+                    const messageInput = document.getElementById('FormControlTextarea2');
+                    var popover = new bootstrap.Popover(submitButton);
+
+                    submitButton.addEventListener('click', function () {
+                        emailInput.value = '';
+                        nameInput.value = '';
+                        messageInput.value = '';
+                        popover.show();
+                        setTimeout(function () {
+                        popover.hide();
+                        }, 5000);
+                    });
+                    });
+                </script>
+        </div>
+        <hr><hr class="mb-5">
+    
+        
+
+        <div class="col-lg-11 col-sm-12 text-center p-2 justify-content-center m-auto content">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <a class="text-dark" href="#"><i class="material-icons">call</i></a>
+                    </div>
+                    <div class="col">
+                        <a class="text-dark" href="quaintclo@gmail.com"><i class="material-icons">email</i></a>
+                    </div>
+                    <div class="col">
+                        <a class="text-dark" href="https://www.google.com/maps/place/Quaint+Clothing/@14.647809,120.9515938,80a,51.4y,2.16t/data=!3m1!1e3!4m15!1m8!3m7!1s0x3397b5afb8e043c5:0xe8f701c63bd2ad44!2s17+N+Bay+Blvd,+Navotas,+Metro+Manila!3b1!8m2!3d14.6477593!4d120.9516098!16s%2Fg%2F11gj41nlgf!3m5!1s0x3397b59b21c0b083:0xc1b00865c6fcd1c4!8m2!3d14.6478415!4d120.9519213!16s%2Fg%2F11sx6v6m76?entry=ttu"><i class="material-icons">location_on</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-11 col-sm-12 text-center p-3 mb-5 justify-content-center m-auto txt">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <h5>Contact Number</h5>
+                        <hr>
+                        <h1>+639153736690</h1>
+                    </div>
+                    <div class="col">
+                        <h5>Email Address</h5>
+                        <hr>
+                        <h1>quaintclo@gmail.com</h1>
+                    </div>
+                    <div class="col">
+                        <h5>Location</h5>
+                        <hr>
+                        <h1>17 North Bay Boulevard, Navotas City</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr><hr class="mb-5">
+
+        <div class="col-lg-11 col-sm-12 text-center p-2 justify-content-center m-auto content">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-sm-3">
+                        <a class="text-dark" href="https://www.facebook.com/quaintclo.ph/"><i class="material-icons">facebook</i></a>
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        <a class="text-dark" href="https://www.instagram.com/quaint_clo/?hl=en"><i class="material-icons">center_focus_weak</i></a>
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        <a class="text-dark" href="https://www.tiktok.com/@quaint_clo"><i class="material-icons">tiktok</i></a>
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        <a class="text-dark" href="https://shp.ee/upab78r"><i class="material-icons">shop</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="col-lg-11 col-sm-12 text-center p-3 mb-5 justify-content-center m-auto txt">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-sm-3">
+                        <h5>Facebook</h5>
+                        <hr>
+                        <h1>Quaint Clothing</h1>
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        <h5>Instagram</h5>
+                        <hr>
+                        <h1>quaint_clo</h1>
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        <h5>TikTok</h5>
+                        <hr>
+                        <h1>quaint_clo</h1>
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        <h5>Shopee</h5>
+                        <hr>
+                        <h1>quaintclothing</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+        <footer class="bg-black text-light text-center py-4 mt-5 position-static" style="bottom: 0px;">
+            <div class="container">
+                <div class="row">
+                    <hr>
+                    <div class="col">
+                        <p>&copy; 2024 Quaint Clothing. All rights reserved.</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script defer src="modal.js"></script>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="145acf32-e508-4a04-b786-73afcb5ad0d1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+</body>
+</html>

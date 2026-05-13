@@ -1,0 +1,540 @@
+<html>
+
+<head>
+    <title>Quaint Clothing</title>
+    <link rel="icon" href="small logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+            background-color: black;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset black;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #212121;
+            -webkit-box-shadow: inset 0 0 6px #000000b3;
+        }
+
+        body {
+            background-color: #f0f0f0;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .bgimg {
+            background-image: url("productbg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position-y: 100%;
+        }
+
+        .shopbtn {
+            transition: 0.4s;
+        }
+
+        .shopbtn:hover {
+            transform: scale(1.05);
+        }
+
+        .jstfy {
+            text-align: justify;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .t {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bgimg">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top d-flex bgimg">
+        <a class="navbar-brand ms-5 ps-5 ms-sm-3 ms-md-5 text-black fs-2 " href="index.html"><img
+                src="quaint white logo.png" height="120px"> <span class="text-white">Quaint Clothing</span></a>
+
+        <button class="navbar-toggler me-lg-5 me-md-5 me-sm-5" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ms-sm-5 ps-sm-5 me-sm-5 pe-sm-5" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="person.html">Personnel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="support.html">Support</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-5 text-white" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="products.html#beanie">Beanies</a></li>
+                        <li><a class="dropdown-item" href="products.html#shirt">Shirts</a></li>
+                        <li><a class="dropdown-item" href="products.html#cap">Caps</a></li>
+                        <li><a class="dropdown-item" href="products.html#hat">Hats</a></li>
+                        <li><a class="dropdown-item" href="products.html#hood">Hoodie</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row" id="beanie">
+            <div class="fs-1 text-white fw-bold text-center bg-dark rounded-5 p-4"
+                style="background-image: url(textbg.jpg);height: 120px;">
+                Products
+            </div>
+            <div class="col-lg-3 col-sm-4 h1 text-white m-5 p-3 bg-black rounded-5 text-center shadow">
+                Beanies
+            </div>
+            <div class="col-lg-9"></div>
+            <div class="col-lg-4 col-sm-12 text-center">
+                <img src="quaint products/beanie1.jfif" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    Skullie Clean White
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱259</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="Skullie Clean White" data-price="259">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-center">
+                <img src="quaint products/beanie3.jfif" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    Skullie Coal Black
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱259</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="Skullie Coal Black" data-price="259">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-center">
+                <img src="quaint products/beanie2.jfif" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    Skullie Chartreuse
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱259</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="Skullie Chartreuse" data-price="259">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="shirt">
+            <div style="height: 120px; background-image: url(textbg.jpg);"></div>
+            <div class="col-lg-3 col-sm-4 h1 text-white m-5 p-3 bg-black rounded-5 text-center shadow">
+                Shirts
+            </div>
+            <div class="col-lg-9"></div>
+            <div class="col-lg-4 col-sm-12 my-2 text-center">
+                <img src="quaint products/shirt1.png" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    PUFF blue
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱499</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="PUFF blue" data-price="499">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 my-2 text-center">
+                <img src="quaint products/shirt2.png" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    PUFF Orange
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱499</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="PUFF Orange" data-price="499">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 my-2 text-center">
+                <img src="quaint products/shirt3.png" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    OG v.2 OFF-WHITE
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱379</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="OG v.2 OFF-WHITE" data-price="34.99">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 my-2 text-center">
+                <img src="quaint products/shirt4.jfif" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    DYEVERSE Blue & Green
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱600</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="DYEVERSE Blue & Green" data-price="600">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 my-2 text-center">
+                <img src="quaint products/shirt5.jfif" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    DYEVERSE Yellow & Black
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱600</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="DYEVERSE Yellow & Black" data-price="600">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 my-2 text-center">
+                <img src="quaint products/shirt7.jfif" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    DYEVERSE Gray & Black
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱600</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="DYEVERSE Gray & Black" data-price="600">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 my-2 text-center">
+                <img src="quaint products/shirt8.jfif" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    DYEVERSE Blue & Black
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱600</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="DYEVERSE Blue & Black" data-price="600">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 my-2 text-center">
+                <img src="quaint products/shirt6.jpg" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    Saint
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱480</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="Saint" data-price="480">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 my-2 text-center">
+                <img src="quaint products/shirt9.jfif" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    The Creation
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱550</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="The Creation" data-price="550">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row" id="cap">
+            <div style="height: 120px; background-image: url(textbg.jpg);"></div>
+            <div class="col-lg-3 col-sm-4 h1 text-white m-5 p-3 bg-black rounded-5 text-center shadow">
+                Caps
+            </div>
+            <div class="col-lg-9" style="margin-right: 100px;"></div>
+            <div class="col-lg-6 col-sm-6 text-center">
+                <img src="quaint products/cap1.jfif" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    Corduroy Velvet Cap Black
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱245</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="Corduroy Velvet Cap Black" data-price="245">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 text-center">
+                <img src="quaint products/cap2.jfif" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    Corduroy Velvet Cap Beige
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱245</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="Corduroy Velvet Cap Beige" data-price="245">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 text-center">
+                <img src="quaint products/cap3.jfif" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    Anniversary Cap Black
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱245</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="Anniversary Cap Black" data-price="245">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 text-center">
+                <img src="quaint products/cap4.jfif" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    Anniversary Cap White
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱245</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="Anniversary Cap Black White" data-price="245">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="hat">
+            <div style="height: 120px; background-image: url(textbg.jpg);"></div>
+            <div class="col-lg-3 col-sm-4 h1 text-white m-5 p-3 bg-black rounded-5 text-center shadow">
+                Hats
+            </div>
+            <div class="col-lg-9"></div>
+            <div class="col-lg-4 col-sm-12 text-center">
+                <img src="quaint products/hat1.jfif" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    Session Hat Dark Gray
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱199</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="Session Hat Dark Gray" data-price="199">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-center">
+                <img src="quaint products/hat2.jfif" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    Session Hat Dark Blue
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱199</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="Session Hat Dark Blue" data-price="199">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-center">
+                <img src="quaint products/hat3.jfif" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    Session Hat White
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱199</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="Session Hat White" data-price="199">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="hood">
+            <div style="height: 120px; background-image: url(textbg.jpg);"></div>
+            <div class="col-lg-3 col-sm-4 h1 text-white m-5 p-3 bg-black rounded-5 text-center shadow">
+                Hoodies
+            </div>
+            <div class="col-lg-9"></div>
+            <div class="col-lg-6 col-sm-12 text-center">
+                <img src="quaint products/hood1.png" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    Classic PullOver Cream
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱699</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="Classic PullOver Cream" data-price="699">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 text-center">
+                <img src="quaint products/hood2.png" class="img-fluid rounded-5 shopbtn">
+                <p class="text-center fs-4 text-white m-1">
+                    Classic PullOver Black
+                </p>
+                <div class="d-flex justify-content-between align-items-center mb-5 bg-gradient p-1 rounded-top-5">
+                    <span class="fs-2 text-white mb-5 ms-2">₱699</span>
+                    <button class="btn btn-dark add-to-cart-btn mb-5 fs-3 rounded-5 border border-secondary border-4"
+                        data-name="Classic PullOver Black" data-price="699">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="col-12" style="height: 50px;"></div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white" id="cartModalLabel">Your Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-white" id="cart-modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary">Checkout</button>
+                    <button type="button" class="btn btn-secondary" id="clear-cart-btn">Clear</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <span class="text-white" style=" position: fixed; bottom: 20px; left: 30px;">
+        <button type="button" class="btn btn-dark border border-secondary fs-4" id="show-cart-btn"><svg
+                xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart2"
+                viewBox="0 0 20 20">
+                <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+            </svg>Show Cart </button>
+
+    </span>
+    <div id="cart-count" class="cart-count fs-5 text-white bg-primary rounded-5 text-center p-1"
+        style="width: 40px; height: 40px; line-height: 30px; position: fixed; bottom: 53px; left: 170px;">
+        0
+    </div>
+
+    <footer class="bg-black text-light text-center py-4 mt-5 position-static">
+        <div class="container">
+            <div class="row">
+                <hr>
+                <div class="col">
+                    <p>&copy; 2024 Quaint Clothing. All rights reserved.</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        let cart = [];
+
+        function addToCart(productName, productPrice) {
+            const product = { name: productName, price: productPrice };
+            cart.push(product);
+            updateCartDisplay();
+        }
+
+        function updateCartDisplay() {
+            const cartCount = document.getElementById('cart-count');
+            cartCount.textContent = cart.length;
+        }
+
+        function showCart() {
+            const cartModalBody = document.getElementById('cart-modal-body');
+            cartModalBody.innerHTML = '';
+
+            if (cart.length === 0) {
+                cartModalBody.innerHTML = '<p class="text-center">Your cart is empty.</p>';
+            } else {
+                let totalPrice = 0;
+                cart.forEach(product => {
+                    const productRow = document.createElement('div');
+                    productRow.className = 'd-flex justify-content-between';
+                    productRow.innerHTML = `<span>${product.name}</span><span>₱${product.price.toFixed(2)}</span>`;
+                    cartModalBody.appendChild(productRow);
+                    totalPrice += product.price;
+                });
+
+                const totalRow = document.createElement('div');
+                totalRow.className = 'd-flex justify-content-between font-weight-bold border-top pt-2';
+                totalRow.innerHTML = `<span>Total</span><span>₱${totalPrice.toFixed(2)}</span>`;
+                cartModalBody.appendChild(totalRow);
+            }
+
+            const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+            cartModal.show();
+        }
+
+        function clearCart() {
+            cart = [];
+            updateCartDisplay();
+            const cartModalBody = document.getElementById('cart-modal-body');
+            cartModalBody.innerHTML = '<p class="text-center">Your cart is empty.</p>';
+        }
+
+        document.getElementById('clear-cart-btn').addEventListener('click', clearCart);
+
+        document.getElementById('show-cart-btn').addEventListener('click', showCart);
+
+        document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const productName = this.dataset.name;
+                const productPrice = parseFloat(this.dataset.price);
+                addToCart(productName, productPrice);
+            });
+        });
+
+    </script>
+    <script
+        type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "145acf32-e508-4a04-b786-73afcb5ad0d1"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+</body>
+
+</html>

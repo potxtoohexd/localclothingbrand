@@ -1,0 +1,326 @@
+<html>
+<head>
+    <title>Quaint Clothing</title>
+    <link rel="icon" href="small logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        ::-webkit-scrollbar {
+                width: 10px;
+                background-color: black;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset black;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color:#212121;
+            -webkit-box-shadow: inset 0 0 6px #000000b3;
+        }   
+        body {
+            background-color: #f0f0f0;
+        }
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+        .custom-font {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .splash-page .btn {
+            margin-top: 20px;
+        }
+        .splash-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .bgimg {
+            background-image: url("bgimagee.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .shopbtn {
+            background-color: #ffffff2d;
+            border-radius: 50px;
+            border-color: #ffffff00;
+            width: 300px;
+            transition: 0.4s;
+        }
+        .shopbtn:hover {
+            transform: scale(1.05);
+        }
+        .jstfy {
+            text-align: justify;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        #hero{
+            background:  linear-gradient(rgba(0,0,0,0.5), #000), url(bnnr3.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .custom-height {
+            height: 86vh; 
+        }
+
+        .photo-container {
+            overflow: hidden;
+        }
+        .photo {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+        .photo-container:hover{
+            transform: scale(1.1);
+        }
+
+        .text-content {
+            padding: 20px;
+        }
+
+        .section-padding{
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .section-padding2{
+            padding-top: 70px;
+        }
+
+        .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 10px; 
+        margin-left: 100px;
+        margin-right: 100px;
+        }
+
+        .grid-item {
+            position: relative;
+            overflow: hidden;
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .grid-item:hover img {
+            transform: scale(1.1);
+        }
+        .text-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .grid-item:hover .text-overlay {
+            opacity: 1;
+        }
+        .text-overlay a {
+            color: white;
+            text-decoration: none;
+        }
+        .text-overlay p {
+            margin: 0;
+        }
+
+        .small-photos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .small-photos .grid-item {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+            .small-photos {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body class="bgimg">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top d-flex bgimg">
+        <a class="navbar-brand ms-5 ps-5 ms-sm-3 ms-md-5 text-black fs-2 " href="index.html"><img src="quaint white logo.png" height="120px"> <span class="text-white">Quaint Clothing</span></a>
+
+        <button class="navbar-toggler me-lg-5 me-md-5 me-sm-5" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ms-sm-5 ps-sm-5 me-sm-5 pe-sm-5" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="person.html">Personnel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="support.html">Support</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-5 text-white" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="products.html#beanie">Beanies</a></li>
+                        <li><a class="dropdown-item" href="products.html#shirt">Shirts</a></li>
+                        <li><a class="dropdown-item" href="products.html#cap">Caps</a></li>
+                        <li><a class="dropdown-item" href="products.html#hat">Hats</a></li>
+                        <li><a class="dropdown-item" href="products.html#hood">Hoodie</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="hero" class="custom-height d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-uppercase text-white">Not just clothing, but your everything.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section-padding2">
+        <h2 class="text-center fw-bold text-white text-uppercase mb-4">Products</h2>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 grid-item">
+                <img src="hoodies.jpg" alt="Hoodies">
+                <div class="text-overlay">
+                    <a href="products.html#hood">
+                        <p class="fw-bold fs-2">HOODIES</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="row small-photos mt-3 mt-lg-0">
+                    <div class="col-lg-6 col-md-6 col-sm-6 mb-3 grid-item">
+                        <img src="beanies.jpg" alt="Beanies">
+                        <div class="text-overlay">
+                            <a href="products.html#beanie">
+                                <p class="fw-bold fs-2">BEANIES</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 mb-3 grid-item">
+                        <img src="caps.jpg" alt="Caps">
+                        <div class="text-overlay">
+                            <a href="products.html#cap">
+                                <p class="fw-bold fs-2">CAPS</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 mb-3 grid-item">
+                        <img src="hats.jpg" alt="Hats">
+                        <div class="text-overlay">
+                            <a href="products.html#hat">
+                                <p class="fw-bold fs-2">HATS</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 mb-3 grid-item">
+                        <img src="shirts.jpg" alt="Shirts">
+                        <div class="text-overlay">
+                            <a href="products.html#shirt">
+                                <p class="fw-bold fs-2">SHIRTS</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="content" class="d-flex align-items-center text-center section-padding2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                    <div class="photo-container">
+                        <img src="bnnr1.jpg" class="photo" alt="Image 1">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                    <div class="photo-container">
+                        <img src="IMG1.jpg" class="photo" alt="Image 2">
+                    </div>
+                </div>
+                <div class="col-sm-12 d-lg-none" style="height: 50px;"></div>
+                <div class="col-lg-4 col-md-12 col-sm-12 d-flex align-items-center justify-content-center" style="background-color: #000;">
+                    <div class="text-content text-white">
+                        <h2 class="text-uppercase fw-bold">Quaint</h2>
+                        <p>adj. Simply means unique; attractively unusual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content" class="d-flex align-items-center text-center section-padding2 pb-5">
+        <div class="container" style="background-color: #343a40; padding: 20px;">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 align-items-center justify-content-center">
+                    <div class="text-content">
+                        <h2 class="text-uppercase fw-bold text-white">VISION</h2>
+                        <p class="text-white">Quaint Clothing is for everyone of all ages. Our goal is to give people an extra boost while rocking their OOTD at a very reasonable cost. Our products give the consumers courage and add a little zest to their fashion style. We are producing our line of clothing to stand behind our interests and state of style and provide what you are going to love wearing. That is why we offer the right fashion products on a timely basis. Furthermore, we aim to establish ourselves as one of the leading local brands in the Philippines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-black text-light text-center py-4 mt-5 position-static">
+        <div class="container">
+            <div class="row">
+                <hr>
+                    <p>&copy; 2024 Quaint Clothing. All rights reserved.</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script defer src="modal.js"></script>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="145acf32-e508-4a04-b786-73afcb5ad0d1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+</body>
+</html>

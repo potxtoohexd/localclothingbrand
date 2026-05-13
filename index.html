@@ -1,0 +1,150 @@
+<html>
+<head>
+    <title>Quaint Clothing</title>
+    <link rel="icon" href="small logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        ::-webkit-scrollbar {
+                width: 10px;
+                background-color: black;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset black;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color:#212121;
+            -webkit-box-shadow: inset 0 0 6px #000000b3;
+        }   
+        body {
+            background-color: #f0f0f0;
+        }
+        .splash-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+        .custom-font {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .splash-page .btn {
+            margin-top: 20px;
+        }
+        .splash-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .bgimg {
+            background-image: url("bgimagee.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position-y: -90px;
+        }
+        .shopbtn {
+            background-color: #ffffff2d;
+            border-radius: 50px;
+            border-color: #ffffff00;
+            width: 300px;
+            transition: 0.4s;
+        }
+        .shopbtn:hover {
+            transform: scale(1.05);
+        }
+        .jstfy {
+            text-align: justify;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .t {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        
+    </style>
+</head>
+<body class="bgimg">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <a class="navbar-brand ms-5 ps-5 ms-sm-3 ms-md-5 text-black fs-2 " href="index.html"><img src="Quaint png.png" height="120px"> <span>Quaint Clothing</span></a>
+
+        <button class="navbar-toggler me-lg-5 me-md-5 me-sm-5" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ms-sm-5 ps-sm-5 me-sm-5 pe-sm-5" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-black fs-5" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black fs-5" href="person.html">Personnel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black fs-5" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black fs-5" href="contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black fs-5" href="support.html">Support</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-5 text-black" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="products.html#beanie">Beanies</a></li>
+                        <li><a class="dropdown-item" href="products.html#shirt">Shirts</a></li>
+                        <li><a class="dropdown-item" href="products.html#cap">Caps</a></li>
+                        <li><a class="dropdown-item" href="products.html#hat">Hats</a></li>
+                        <li><a class="dropdown-item" href="products.html#hood">Hoodie</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12" style="height: 150px;"></div>
+            <div class="col-lg-7 col-md-12 d-lg-block d-sm-none">
+                <img class="mx-4 img-fluid" src="laptop legit.gif" >
+            </div>
+            <div class="col-sm-12 d-lg-none d-sm-block fs-2 text-black p-5 jstfy ">Quaint clothing is environmentally mindful clothing that promotes sustainability and reduces our environmental impact. It also strives to offer stylish yet cost-effective products.</div>
+            <div class="col-lg-5 col-sm-12 text-center p-5 justify-content-center m-auto">
+                <div class="fs-2 text-black fst-italic fw-bold t">NOT JUST A CLOTHING, BUT YOUR EVERYTHING</div>
+                <button class="mt-4 p-3 shopbtn shadow">
+                    <a class="text-decoration-none text-black h1 img-fluid" href="products.html">
+                    Shop Now
+                    </a>
+                </button>
+            </div>
+            <div class="col-lg-12 col-md-12 d-lg-none d-sm-black" style="margin-bottom: 100px;">
+                <img class=" img-fluid" src="laptop legit.gif" >
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script defer src="modal.js"></script>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="145acf32-e508-4a04-b786-73afcb5ad0d1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+</body>
+</html>
